@@ -32,10 +32,12 @@ public class TestPlip {
 
     @Test
     public void testReplicate() {
-        // TODO
+        Plip p1 = new Plip(2);
+        Plip p2 = p1.replicate();
+        Plip p3 = new Plip(1);
     }
 
-    //@Test
+    @Test
     public void testChoose() {
 
         // No empty adjacent spaces; stay.
@@ -99,5 +101,11 @@ public class TestPlip {
 
 
         // We don't have Cloruses yet, so we can't test behavior for when they are nearby right now.
+    }
+
+    @Test
+    public void testname(){
+        Plip p = new Plip();
+        System.out.println(p.name());
     }
 }

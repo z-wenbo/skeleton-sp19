@@ -16,6 +16,24 @@ public class TestBSTMap {
 	    }
     }
 
+    @Test
+    public void ssss() {
+        BSTMap<String, Integer> b = new BSTMap<String, Integer>();
+        b.put("f",1);
+        b.put("b",2);
+        b.put("a",3);
+        b.put("v",4);
+        b.put("x",5);
+        b.put("z",6);
+        b.put("w",7);
+        int asd= b.get("a");
+
+        boolean aaf = b.containsKey("a");
+        aaf = b.containsKey("z");
+
+        asd = b.get("w");
+    }
+
     //assumes put/size/containsKey/get work
 	@Test
     public void sanityClearTest() {

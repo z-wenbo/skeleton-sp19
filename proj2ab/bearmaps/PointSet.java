@@ -1,5 +1,5 @@
 package bearmaps;
 
 public interface PointSet {
-    Point nearest(double x, double y);
+    public Point nearest(double x, double y);
 }
